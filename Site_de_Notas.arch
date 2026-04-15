@@ -1,0 +1,135 @@
+{
+  "name": "CalculadoraUI",
+  "target_language": "Python",
+  "imports": [],
+  "blocks": [
+    {
+      "uid": "995a9b3a-6c5c-43fc-91b9-8e50e3e6ffd0",
+      "label": "Soma",
+      "x": 80,
+      "y": 80,
+      "mode": "simple",
+      "classe": "",
+      "attributes": [],
+      "methods": [],
+      "description": "soma dois números => [resultado]",
+      "color": "",
+      "inputs": [
+        "a: number",
+        "b: number"
+      ],
+      "outputs": [
+        "resultado: number"
+      ],
+      "states": [],
+      "transitions": [],
+      "memory": [],
+      "params": [],
+      "isFunction": false,
+      "functionInputs": [],
+      "functionOutputs": [],
+      "functionBehavior": "once",
+      "functionArgs": [],
+      "logicInputStates": [],
+      "logicOutputState": false,
+      "logicInputNames": []
+    },
+    {
+      "uid": "17a6cbee-bb77-4baf-9c6b-d4eadba7db98",
+      "label": "Subtracao",
+      "x": 320,
+      "y": 80,
+      "mode": "simple",
+      "classe": "",
+      "attributes": [],
+      "methods": [],
+      "description": "subtrai dois números => [resultado]",
+      "color": "",
+      "inputs": [
+        "a: number",
+        "b: number"
+      ],
+      "outputs": [
+        "resultado: number"
+      ],
+      "states": [],
+      "transitions": [],
+      "memory": [],
+      "params": [],
+      "isFunction": false,
+      "functionInputs": [],
+      "functionOutputs": [],
+      "functionBehavior": "once",
+      "functionArgs": [],
+      "logicInputStates": [],
+      "logicOutputState": false,
+      "logicInputNames": []
+    },
+    {
+      "uid": "aa4d29a0-9ec4-407c-9eae-75bd8b2b2c5e",
+      "label": "Multiplicacao",
+      "x": 560,
+      "y": 80,
+      "mode": "simple",
+      "classe": "",
+      "attributes": [],
+      "methods": [],
+      "description": "multiplica dois números => [resultado]",
+      "color": "",
+      "inputs": [
+        "a: number",
+        "b: number"
+      ],
+      "outputs": [
+        "resultado: number"
+      ],
+      "states": [],
+      "transitions": [],
+      "memory": [],
+      "params": [],
+      "isFunction": false,
+      "functionInputs": [],
+      "functionOutputs": [],
+      "functionBehavior": "once",
+      "functionArgs": [],
+      "logicInputStates": [],
+      "logicOutputState": false,
+      "logicInputNames": []
+    },
+    {
+      "uid": "bda4a401-9ebd-40e7-bd8d-3eb6579ad495",
+      "label": "Divisao",
+      "x": 800,
+      "y": 80,
+      "mode": "simple",
+      "classe": "",
+      "attributes": [],
+      "methods": [],
+      "description": "divide dois números => [resultado]",
+      "color": "",
+      "inputs": [
+        "a: number",
+        "b: number"
+      ],
+      "outputs": [
+        "resultado: number"
+      ],
+      "states": [],
+      "transitions": [],
+      "memory": [],
+      "params": [],
+      "isFunction": false,
+      "functionInputs": [],
+      "functionOutputs": [],
+      "functionBehavior": "once",
+      "functionArgs": [],
+      "logicInputStates": [],
+      "logicOutputState": false,
+      "logicInputNames": []
+    }
+  ],
+  "connections": [],
+  "frontend": {
+    "components": []
+  }
+}
