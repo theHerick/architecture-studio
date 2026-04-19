@@ -1,5 +1,5 @@
 
-```markdown
+
 <div align="center">
 
 <pre>
@@ -24,8 +24,6 @@
 <img src="https://img.shields.io/badge/Docs-Online-black?logo=readthedocs" alt="Docs" />
 <img src="https://img.shields.io/badge/license-MIT-purple" alt="License" />
 
-<br><br>
-<i>Esse projeto é meu.</i>
 
 </div>
 
@@ -102,4 +100,3 @@ Made by Tiburski, Herick B.
 </div>
 ```
 
-```
