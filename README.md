@@ -1,3 +1,4 @@
+```
 <div align="center">
 ```
     █████╗ ██████╗  ██████╗██╗  ██╗
@@ -74,3 +75,4 @@ architecture-studio/
 <div align="center">
 Made by Herick B. Tiburski
 </div>
+```
