@@ -1,78 +1,79 @@
+
+<div align="center">
 ```
-m
-```
-    █████╗ ██████╗  ██████╗██╗  ██╗
-   ██╔══██╗██╔══██╗██╔════╝██║  ██║
-   ███████║██████╔╝██║     ███████║
-   ██╔══██║██╔══██╗██║     ██╔══██║
-   ██║  ██║██║  ██║╚██████╗██║  ██║
-   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
-   ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗
-   ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
-   ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
-   ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
-   ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
-   ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝
+ ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗ 
+ ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+ ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+ ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+ ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+ ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
 
 ```
-**Architecture Studio · Blueprint Design · Comprehensive Documentation Hub**
+**Visual Systems Modeling · Architecture-First · Blueprint Generator**
 </div>
 ## What is Architecture Studio?
-Architecture Studio is your dedicated platform for designing, structuring, and documenting software systems.
-It provides the tools to define **what** you are going to build before you write a single line of code, creating the perfect foundation for manual development or AI-driven generation tools.
+Architecture Studio is a web-based platform that helps you design and document your software architecture visually.
+You map **what** your system is. The studio generates the blueprints for **how** it should be structured.
 ```
-You (Architect) → Architecture Studio → Structured Blueprints & Docs
+You (Architect) → Architecture Studio → architecture.md
 
 ```
-No more lost context. No more confusing system designs. Just clear, accessible architecture.
+No messy diagrams. No lost context. Just clean architecture ready for implementation or AI code generation.
 ## How it Works
-Architecture Studio streamlines the planning phase of your projects into a centralized workflow:
+Architecture Studio provides a complete design-to-blueprint pipeline directly in your browser:
 ```
-    Idea / Requirements
+architecturestudio.online
             │
             ▼
-      Platform Studio  ──→  Define components, logic & data flow
+        Modeler  ──→  visual nodes for components & relationships
             │
             ▼
-    Documentation Hub  ──→  Auto-syncs definitions to readable docs
+      Validator  ──→  checks for structural consistency
             │
-      ┌─────┴─────┐
-      │           │
-      ▼           ▼
-  Team Sync   AI Generation  ──→  Use blueprints for tools like Rabit
+          ┌─┴─┐
+          │   │
+          ▼   ▼
+     Docs   Export  ──→  generates architecture.md & reference docs
 
 ```
-## Resources & Links
-Access the platform and official documentation directly from the web. No installation required.
-| Resource | URL | Description |
+## Ecosystem
+Architecture Studio operates entirely online with comprehensive documentation available.
+| Resource | Description | URL |
 |---|---|---|
-| **Studio Platform** | architecturestudio.online | The main application for designing your software architecture. |
-| **Official Docs** | architecturestudio.online/docs | Complete guides, references, and usage examples. |
-## Getting Started
-Since Architecture Studio is a web-based platform, getting started is immediate.
-**1. Access the Platform:**
-Navigate to architecturestudio.online.
-**2. Explore the Documentation:**
-If you need help setting up your first architectural blueprint, check the Docs for step-by-step tutorials and best practices.
-## Core Ecosystem
+| **Studio Platform** | Main visual modeling environment | architecturestudio.online |
+| **Official Docs** | Guides, references, and usage examples | architecturestudio.online/docs |
+## Usage
+**Getting Started:**
+No local installation required.
+ 1. Access architecturestudio.online
+ 2. Create your components and define their relationships
+ 3. Export your architecture blueprint
+**Integration with CLI Tools:**
+Architecture Studio blueprints pair perfectly with multi-agent AI tools like Rabit.
+```bash
+# 1. Export your architecture.md from the Studio
+# 2. Place it in your project folder
+# 3. Run your code generator:
+rabit /open
+
 ```
-architecture-studio/
-├── Studio/                # The main visual and structural design hub
-│   ├── Component Mapper   # Define microservices, APIs, and frontend logic
-│   └── Relationship Graph # Map dependencies and system flow
-└── Docs/                  # https://architecturestudio.online/docs
-    ├── Guides             # How-to articles for software architects
-    ├── Blueprints         # Templates for standard project structures
-    └── Integrations       # How to connect output with generation tools
+## Output Structure
+When you build and export a blueprint, it structures your system context clearly:
+```
+project-blueprint/
+├── architecture.md    # The core blueprint generated by the Studio
+├── components/        # Defined system nodes and logic
+├── relationships/     # Data flow and dependency map
+└── rules/             # System constraints and architectural guidelines
 
 ```
 ## Key Features
- * **Architecture-First** — Prioritize system design to ensure scalability and clarity before development begins.
- * **Centralized Hub** — Keep all your system diagrams, rules, and blueprints in one accessible online location.
- * **Comprehensive Documentation** — Dedicated /docs section to support your workflow and answer structural questions.
- * **AI-Ready Blueprints** — Output clean, structured architecture files that are perfect for multi-agent code generation CLI tools.
- * **Always Online** — Accessible from anywhere, ensuring your team (or your AI agents) always have the latest context.
+ * **Architecture-First** — build the system blueprint before writing code
+ * **Visual Modeler** — intuitive interface for mapping complex systems
+ * **Auto-Documentation** — /docs provides complete guidance and structural templates
+ * **Generator Ready** — perfectly formatted outputs for AI tools and multi-agent pipelines
+ * **Cloud Native** — accessible anywhere, directly in the browser
+ * **Zero Config** — start modeling immediately without local setup
 <div align="center">
 Made by Herick B. Tiburski
 </div>
-```
