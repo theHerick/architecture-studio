@@ -54,7 +54,7 @@ architecturestudio.online
           ┌─┴─┐
           │   │
           ▼   ▼
-     Docs   Export  ──→  generates architecture.md & reference docs
+     Docs   Export  ──→  generates architecture.aal & reference docs
 
 ```
 ## Ecosystem
@@ -98,5 +98,5 @@ project-blueprint/
 <div align="center">
 Made by Tiburski, Herick B.
 </div>
-```
+
 
