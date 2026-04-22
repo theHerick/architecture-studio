@@ -1,34 +1,10 @@
-{
-  "name": "teste",
-  "target_language": "none",
-  "imports": [],
-  "blocks": [
-    {
-      "uid": "91c5e13a-17be-4834-8b1a-1dbaf6d5aed8",
-      "label": "Block",
-      "x": 116,
-      "y": 83.5,
-      "mode": "simple",
-      "classe": "",
-      "attributes": [],
-      "methods": [],
-      "description": "",
-      "color": "",
-      "inputs": [],
-      "outputs": [],
-      "states": [],
-      "transitions": [],
-      "memory": [],
-      "params": [],
-      "isFunction": false,
-      "functionInputs": [],
-      "functionOutputs": [],
-      "functionBehavior": "once",
-      "functionArgs": []
-    }
-  ],
-  "connections": [],
-  "frontend": {
-    "components": []
-  }
-}
+project teste
+
+meta
+  target: none
+
+components
+
+  simple Block
+
+connections
