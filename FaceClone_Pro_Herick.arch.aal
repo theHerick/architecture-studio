@@ -1,0 +1,202 @@
+project FaceClone_Pro_Herick
+
+meta
+  target: none
+
+components
+
+  compact Postagem
+    description: Encapsula a lógica de uma publicação individual
+    input:
+      acaoCurtir
+      acaoComentar
+      acaoPartilhar
+
+    output:
+      estadoAtualizado
+
+    fields:
+      id: string
+      autor: string
+      timestamp: datetime
+      conteudo: string
+      mediaUrl: string
+      curtidas: int
+
+
+    components
+
+      (none)
+
+    connections
+
+      (none)
+
+  simple GerenciadorPerfil
+    description: Centraliza as informações do usuário logado
+    input:
+      editarPerfil
+    output:
+      dadosSincronizados
+
+  simple SistemaNotificacoes
+    description: Gerencia alertas de novas curtidas e comentários
+    input:
+      eventoInteracao
+    output:
+      alertaVisual
+
+connections
+
+  [Postagem].out:estadoAtualizado -> [SistemaNotificacoes].in:eventoInteracao
+
+  [GerenciadorPerfil].out:dadosSincronizados -> [Postagem].in:acaoCurtir
+
+
+frontend
+
+  panel pagina_feed
+    label: Feed Principal
+    x: 0
+    y: 0
+    width: 1366
+    height: 768
+
+    panel card_post_template
+      label: Post Card
+      x: 400
+      y: 100
+      width: 550
+      height: 420
+
+      label lbl_avatar
+        text: 👤
+        x: 15
+        y: 15
+        width: 45
+        height: 45
+        fontSize: 30
+
+      label lbl_nome_autor
+        text: Herick
+        x: 70
+        y: 15
+        width: 300
+        height: 25
+        fontWeight: bold
+
+      label lbl_tempo
+        text: Publicado agora mesmo
+        x: 70
+        y: 35
+        width: 200
+        height: 20
+        fontSize: 12
+
+      textarea txt_conteudo_post
+        text: Estou aprimorando o motor da AAL hoje! 🚀
+        x: 15
+        y: 70
+        width: 520
+        height: 80
+
+      panel area_media
+        label: Imagem/Vídeo
+        x: 15
+        y: 160
+        width: 520
+        height: 180
+
+      label lbl_stats
+        text: 👍 128 curtidas • 12 comentários
+        x: 15
+        y: 350
+        width: 520
+        height: 20
+        fontSize: 13
+
+      menubar acoes_post
+        x: 15
+        y: 375
+        width: 520
+        height: 40
+
+        button btn_curtir
+          text: Curtir
+          bindTo: Postagem.in:acaoCurtir
+          x: 0
+          y: 0
+          width: 160
+          height: 35
+
+        button btn_comentar
+          text: Comentar
+          bindTo: Postagem.in:acaoComentar
+          x: 170
+          y: 0
+          width: 160
+          height: 35
+
+
+
+
+  panel pagina_perfil
+    label: Perfil do Usuário
+    x: 1450
+    y: 0
+    width: 1366
+    height: 768
+
+    panel header_perfil
+      label: Capa e Info
+      x: 183
+      y: 0
+      width: 1000
+      height: 450
+
+      panel img_capa
+        x: 0
+        y: 0
+        width: 1000
+        height: 300
+
+      label img_perfil_herick
+        text: 🧑‍💻
+        x: 50
+        y: 220
+        width: 150
+        height: 150
+        fontSize: 80
+
+      label nome_herick
+        text: Herick
+        x: 220
+        y: 310
+        width: 400
+        height: 40
+        fontSize: 32
+        fontWeight: bold
+
+      button btn_editar_perfil
+        text: Editar Perfil
+        bindTo: GerenciadorPerfil.in:editarPerfil
+        x: 820
+        y: 320
+        width: 150
+        height: 35
+
+
+    panel grid_fotos
+      label: Fotos em Destaque
+      x: 183
+      y: 460
+      width: 300
+      height: 300
+
+      label lbl_titulo_fotos
+        text: Fotos
+        x: 10
+        y: 10
+        fontWeight: bold
+
+
