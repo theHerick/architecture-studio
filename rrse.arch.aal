@@ -1,0 +1,76 @@
+project Sem título
+
+meta
+  target: none
+
+components
+
+  simple PaginaDeLogin
+    description: login com nome e senha "para testes login Raul e senha 123"
+    input:
+      clique
+      iniciar
+      Nome
+      Senha
+    output:
+      loginCorreto
+
+  simple GestaoDeFuncionarios
+    description: folha de pagamentos e controle de horarios de entra e saidas e sistema de criar funcionario "crie funcionarios aleatorios"
+    input:
+      clique
+      iniciar
+
+  simple PaginaInicialDashBoard
+    description: valor de entrada de cada produto e  de saida de cada produto
+    input:
+      clique
+      iniciciar
+
+  simple GestaoDeProdutos
+    description: barra de pesquisas entrada de produtos e saidas de produtos e opcao de criar produto "crie produtos aleatorios"
+    input:
+      clique
+      iniciar
+    output:
+      dados
+
+  simple MenuBar
+    input:
+      clique
+    output:
+      selecionadoGestaoProdutos
+      selecionadoGestaoDeFuncionarios
+
+  simple Graficos
+    description: crie grafico de porcentagem de lucru de vendas de produtos e uma margem de perdas e ganhos
+    input:
+      dados
+
+  simple CadastrarFuncionarios
+    description: modal de cadastro de funcionarios
+    input:
+      npome completo
+      data de nacimento
+      cpf
+      ultimo registro de trabalho
+      escolaridade
+
+connections
+
+  [PaginaDeLogin].out:loginCorreto -> [PaginaInicialDashBoard].in:iniciciar
+
+  [MenuBar] <- [PaginaInicialDashBoard]
+    type: composition
+
+  [MenuBar].out:selecionadoGestaoProdutos -> [GestaoDeProdutos].in:iniciar
+
+  [MenuBar].out:selecionadoGestaoDeFuncionarios -> [GestaoDeFuncionarios].in:iniciar
+    type: composition
+
+  [Graficos] <- [PaginaInicialDashBoard]
+    type: composition
+
+  [GestaoDeProdutos].out:dados -> [Graficos].in:dados
+
+  [CadastrarFuncionarios] <- [GestaoDeFuncionarios]
