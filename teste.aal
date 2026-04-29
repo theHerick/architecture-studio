@@ -1,10 +1,8 @@
-project teste
+project
 
 meta
-  target: none
+  target: ESP8266-NodeMCU
 
 components
-
-  simple Block
-
+	simple helloworld
 connections
