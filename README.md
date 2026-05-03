@@ -51,10 +51,9 @@ architecturestudio.online
             ▼
       Validator  ──→  checks for structural consistency
             │
-          ┌─┴─┐
-          │   │
-          ▼   ▼
-     Docs   Export  ──→  generates architecture.aal & reference docs
+            │ 
+            ▼
+         Export  ──→  generates architecture.aal & reference docs
 
 ```
 ## Ecosystem
@@ -91,7 +90,6 @@ project-blueprint/
 ## Key Features
  * **Architecture-First** — build the system blueprint before writing code
  * **Visual Modeler** — intuitive interface for mapping complex systems
- * **Auto-Documentation** — /docs provides complete guidance and structural templates
  * **Generator Ready** — perfectly formatted outputs for AI tools and multi-agent pipelines
  * **Cloud Native** — accessible anywhere, directly in the browser
  * **Zero Config** — start modeling immediately without local setup
